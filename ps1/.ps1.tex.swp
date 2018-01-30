@@ -1,0 +1,36 @@
+\documentclass[11pt]{article}
+%Gummi|065|=)
+\title{\textbf{CS 361 Spring 2018\\Homework 1}}
+\author{Nathaniel Murphy (njmurph3)}
+\date{}
+
+\usepackage{a4wide}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\begin{document}
+
+\maketitle
+\ \\
+\underline{\textbf{1.1}:} Show that mean$(\{kx\})=k$mean$(\{x\})$ by substituting into the definition. \\ \\
+\underline{\textbf{Solution}:}
+\[\text{mean}(\{x\})=\frac{1}{N}\sum_{i=1}^Nx_i\Rightarrow\text{mean}(\{kx\})=\frac{1}{N}\sum_{i=1}^Nkx_i\]
+\[\frac{1}{N}\sum_{i=1}^Nkx_i=\frac{1}{N}(kx_1+kx_2+\ldots+kx_N)=k\Big(\frac{1}{N}(x_1+x_2+\ldots+x_N)\Big)=k\Big(\frac{1}{N}\sum_{i=1}^Nx_i\Big)=k\text{mean}(\{x\})\] \\ \qed
+\\[30mm]
+\underline{\textbf{1.2}:} Show that mean$(\{x+c\})=$mean$(\{x\})+c$ by substituting into the definition. \\ \\
+\underline{\textbf{Solution}:}
+\[\text{mean}(\{x\})=\frac{1}{N}\sum_{i=1}^Nx_i\Rightarrow\text{mean}(\{x+c\})=\frac{1}{N}\sum_{i=1}^N(x_i+c)\]
+\[\frac{1}{N}\sum_{i=1}^N(x_i+c)=\frac{1}{N}\big((x_1+c)+(x_2+c)+\ldots+(x_N+c)\big)\]
+\[=\frac{1}{N}(x_1+x_2+\ldots+x_N+N\cdot c)\]
+\[=\frac{1}{N}(x_1+x_2+\ldots+x_n)+\frac{1}{N}(N\cdot c)=\Bigg(\frac{1}{N}\sum_{i=1}^Nx_i\Bigg) + c=\text{mean}(\{x\})+c\] \\ \qed
+\newpage
+\ \\
+\underline{\textbf{1.3}:} Show that $\sum_{i=1}^N(x_i-$mean$(\{x\}))=0$ by substituting into the definition. \\ \\
+\underline{\textbf{Solution}:}
+\[\sum_{i=1}^N\Big(x_i-\text{mean}(\{x\})\Big)=\big((x_1-\text{mean}(\{x\}))+(x_2-\text{mean}(\{x\}))+\ldots+(x_N-\text{mean}(\{x\}))\big)\]
+\[=(x_1+x_2+\ldots+x_N)-N(\text{mean}(\{x\}))\]
+\[=\sum_{i=1}^Nx_i-N\Big(\frac{1}{N}\sum_{i=1}^Nx_i\Big)=\sum_{i=1}^Nx_i-\sum_{i=1}^Nx_i=0\] \\ \qed
+\\[30mm]
+
+
+\end{document}

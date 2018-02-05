@@ -1,0 +1,560 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 FEB 2018 14:25
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**ps1.tex
+(./ps1.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/a4wide/a4wide.sty
+Package: a4wide 1994/08/30
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/ntgclass/a4.sty
+Package: a4 2004/04/15 v1.2g A4 based page layout
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks15
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks24
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count99
+\calc@Bcount=\count100
+\calc@Adimen=\dimen112
+\calc@Bdimen=\dimen113
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count101
+\calc@Cskip=\skip51
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count102
+\l_MT_multwidth_dim=\dimen114
+\origjot=\skip52
+\l_MT_shortvdotswithinadjustabove_dim=\dimen115
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen116
+\l_MT_above_intertext_sep=\dimen117
+\l_MT_below_intertext_sep=\dimen118
+\l_MT_above_shortintertext_sep=\dimen119
+\l_MT_below_shortintertext_sep=\dimen120
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count103
+))
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen123
+\captionmargin@=\dimen124
+\captionwidth=\dimen125
+\caption@tempdima=\dimen126
+\caption@indent=\dimen127
+\caption@parindent=\dimen128
+\caption@hangindent=\dimen129
+)
+\c@ContinuedFloat=\count104
+)
+\c@subfigure=\count105
+\c@subtable=\count106
+)
+(./ps1.aux
+
+LaTeX Warning: Label `fig:coffee' multiply defined.
+
+
+LaTeX Warning: Label `fig:coffee' multiply defined.
+
+
+LaTeX Warning: Label `fig:coffee' multiply defined.
+
+)
+\openout1 = `ps1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+ (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count107
+\scratchdimen=\dimen130
+\scratchbox=\box28
+\nofMPsegments=\count108
+\nofMParguments=\count109
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen131
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
+\everyMPtoPDFconversion=\toks27
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 19.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
+
+ []
+
+
+Overfull \hbox (9.7319pt too wide) detected at line 24
+[] [] \OML/cmm/m/it/10.95 kx[] \OT1/cmr/m/n/10.95 = [](\OML/cmm/m/it/10.95 kx[]
+ \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 kx[] \OT1/cmr/m/n/10.95 + [] + \OML/c
+mm/m/it/10.95 kx[]\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 k[][]\OT1/cmr/m/n/
+10.95 (\OML/cmm/m/it/10.95 x[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 x[] \OT
+1/cmr/m/n/10.95 + [] + \OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/10.95 )[] = \OML/cmm
+/m/it/10.95 k[][] [] x[][] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 k[]\OT1/cmr
+/m/n/10.95 (\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 x\OMS/cmsy/m/n/10.95 g\OT1
+/cmr/m/n/10.95 )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--28
+
+ []
+
+[1
+
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 33--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--42
+
+ []
+
+
+Overfull \hbox (10.43822pt too wide) detected at line 42
+[]\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 x\OMS/cmsy/m/n/1
+0.95 g\OT1/cmr/m/n/10.95 ) = [] \OMS/cmsy/m/n/10.95 ) []\OT1/cmr/m/n/10.95 (\OM
+S/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 x \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.9
+5 c\OMS/cmsy/m/n/10.95 g\OT1/cmr/m/n/10.95 ) = []
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 47--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--62
+
+ []
+
+
+Overfull \hbox (9.38213pt too wide) in paragraph at lines 54--62
+\OT1/cmr/m/n/10.95 The there ex-ists in-dices $\OML/cmm/m/it/10.95 j[]; j[] \OT
+1/cmr/m/n/10.95 = []\OML/cmm/m/it/10.95 ; [] \OT1/cmr/m/n/10.95 + 1$, re-spec-t
+ively, such that median$(\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 x\OMS/cmsy/m/
+n/10.95 g\OT1/cmr/m/n/10.95 ) =$ median$(\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.
+95 x\OMS/cmsy/m/n/10.95 g[]\OT1/cmr/m/n/10.95 ) =
+ []
+
+[3] <oil.png, id=24, 392.46625pt x 252.945pt>
+File: oil.png Graphic file (type png)
+ <use oil.png>
+Package pdftex.def Info: oil.png used on input line 67.
+(pdftex.def)             Requested size: 284.52756pt x 183.39008pt.
+
+<cpm.png, id=26, 608.2725pt x 379.4175pt>
+File: cpm.png Graphic file (type png)
+ <use cpm.png>
+Package pdftex.def Info: cpm.png used on input line 79.
+(pdftex.def)             Requested size: 284.52756pt x 177.48099pt.
+
+<beef_hist.png, id=27, 376.40625pt x 264.99pt>
+File: beef_hist.png Graphic file (type png)
+ <use beef_hist.png>
+Package pdftex.def Info: beef_hist.png used on input line 89.
+(pdftex.def)             Requested size: 227.62204pt x 160.24867pt.
+
+<meat_hist.png, id=28, 367.3725pt x 264.99pt>
+File: meat_hist.png Graphic file (type png)
+ <use meat_hist.png>
+Package pdftex.def Info: meat_hist.png used on input line 94.
+(pdftex.def)             Requested size: 227.62204pt x 164.19101pt.
+
+<poultry_hist.png, id=29, 382.42876pt x 264.99pt>
+File: poultry_hist.png Graphic file (type png)
+ <use poultry_hist.png>
+Package pdftex.def Info: poultry_hist.png used on input line 99.
+(pdftex.def)             Requested size: 227.62204pt x 157.72154pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--102
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <./oil.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5 <./cpm.png> <./beef_hist.png>] <3syl.png, id=39, 384.43625pt x 285.065pt>
+File: 3syl.png Graphic file (type png)
+
+<use 3syl.png>
+Package pdftex.def Info: 3syl.png used on input line 109.
+(pdftex.def)             Requested size: 177.05879pt x 131.29242pt.
+ <sen.png, id=40, 384.43625pt x 285.065pt>
+File: sen.png Graphic file (type png)
+ <use sen.png>
+Package pdftex.def Info: sen.png used on input line 113.
+(pdftex.def)             Requested size: 177.05879pt x 131.29242pt.
+
+<math_hist.png, id=41, 124.465pt x 157.58875pt>
+File: math_hist.png Graphic file (type png)
+ <use math_hist.png>
+Package pdftex.def Info: math_hist.png used on input line 128.
+(pdftex.def)             Requested size: 88.52939pt x 112.09076pt.
+
+<port_hist.png, id=42, 124.465pt x 157.58875pt>
+File: port_hist.png Graphic file (type png)
+ <use port_hist.png>
+Package pdftex.def Info: port_hist.png used on input line 132.
+(pdftex.def)             Requested size: 88.52939pt x 112.09076pt.
+
+<le3.png, id=43, 379.4175pt x 252.945pt>
+File: le3.png Graphic file (type png)
+ <use le3.png>
+Package pdftex.def Info: le3.png used on input line 142.
+(pdftex.def)             Requested size: 177.05879pt x 118.03891pt.
+
+<gt3.png, id=44, 379.4175pt x 252.945pt>
+File: gt3.png Graphic file (type png)
+ <use gt3.png>
+Package pdftex.def Info: gt3.png used on input line 146.
+(pdftex.def)             Requested size: 177.05879pt x 118.03891pt.
+
+<le3_perc.png, id=45, 135.50626pt x 151.56625pt>
+File: le3_perc.png Graphic file (type png)
+ <use le3_perc.png>
+Package pdftex.def Info: le3_perc.png used on input line 155.
+(pdftex.def)             Requested size: 88.52939pt x 99.02568pt.
+
+<gt3_perc.png, id=46, 139.52126pt x 155.58125pt>
+File: gt3_perc.png Graphic file (type png)
+ <use gt3_perc.png>
+Package pdftex.def Info: gt3_perc.png used on input line 159.
+(pdftex.def)             Requested size: 88.52939pt x 98.72176pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--166
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6 <./meat_hist.png> <./poultry_hist.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7 <./3syl.png> <./sen.png> <./math_hist.png> <./port_hist.png>]
+<big_box.png, id=60, 623.32875pt x 596.2275pt>
+File: big_box.png Graphic file (type png)
+ <use big_box.png>
+Package pdftex.def Info: big_box.png used on input line 177.
+(pdftex.def)             Requested size: 442.65375pt x 423.41547pt.
+ [8 <./le3.png> <./gt3.png> <./le3_perc.png> <./gt3_perc.png>] [9 <./big_box.pn
+g>] (./ps1.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4034 strings out of 492995
+ 62403 string characters out of 6132704
+ 132282 words of memory out of 5000000
+ 7515 multiletter control sequences out of 15000+600000
+ 10747 words of font info for 41 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,8n,40p,885b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on ps1.pdf (9 pages, 213251 bytes).
+PDF statistics:
+ 111 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -56,12 +56,12 @@
 \underline{\textbf{1.6}:} Show that median$(\{x+c\})=$ median$(\{x\})+c$ by substituting into the definition. \\ \\
 \underline{\textbf{Solution}:} The median of a list is found by first sorting the list, so let us index each element of the sorted list as $\{x\}_s=x_1,x_2,\ldots,x_N$. $\{x\}_s$ is sorted implies that $\forall\hspace{1mm}k,\ell\in\mathbb{N}:\hspace{1mm}k,\ell\leq N,\hspace{1mm}k<\ell\Rightarrow x_k<x_\ell\Rightarrow x_k+c<x_\ell+c$, so we see that $\{x+c\}_s$ is sorted with the same indices for $\{x\}_s$. \\ \\
 \textbf{Case 1:} $N$ is odd. \\
-Then there exists index $j=\ceil*{\frac{N}{2}}$ that perfectly divides the data such that median$\{x\}_s=x_j$. Because $\{x+c\}_s$ is sorted with the same indices as $\{x\}_s$, the median element must occur at index $j$. It follows that median$(\{x\})=$ median$(\{x\}_s)=$ median$(\{x+c\}_s)=$ median$(\{x+c\})$. \\ \\
+Then there exists index $j=\ceil*{\frac{N}{2}}$ that perfectly divides the data such that median$\{x\}_s=x_j$. Because $\{x+c\}_s$ is sorted with the same indices as $\{x\}_s$, the median element must occur at index $j$. It follows that  $arg($median$(\{x\}_s)=arg($median$(\{x+c\}_s))\Rightarrow$ median$(\{x\}_s)+c=$ median$(\{x\})+c=$ median $(\{x+c\}_s)=$ median$(\{x+c\})$. \\ \\
 \textbf{Case 2:} $N$ is even. \\
-The there exists indices $j_1,j_2=\frac{N}{2},\frac{N}{2}+1$, respectively, such that median$(\{x\})=$ median$(\{x\}_s)=\frac{(x_{j_1}+x_{j_2})}{2}$. Because $\{x+c\}_s$ is sorted with the same indeices as $\{x\}_s$, to obtain the median, we must again average elements at indices $j_1,j_2$. It follows that median$(\{x+c\})=$ median$(\{x+c\}_s)=\frac{x_{j_1}+c+x_{j_2}+c}{2}=\frac{x_{j_1}+x_{j_2}+2c}{2}=\frac{x_{j_1}+x_{j_2}}{2}+c=$ median $(\{x\}_s)+c=$ median$(\{x\})+c$. \\ \qed
+The there exists indices $j_1,j_2=\frac{N}{2},\frac{N}{2}+1$, respectively, such that median$(\{x\})=$ median$(\{x\}_s)=\frac{(x_{j_1}+x_{j_2})}{2}$. Because $\{x+c\}_s$ is sorted with the same indeices as $\{x\}_s$, to obtain the median, we must again average elements at indices $j_1,j_2$. It follows that median$(\{x+c\})=$ median$(\{x+c\}_s)=\frac{x_{j_1}+c+x_{j_2}+c}{2}=\frac{x_{j_1}+x_{j_2}+2c}{2}=\frac{x_{j_1}+x_{j_2}}{2}+c=$ median$(\{x\}_s)+c=$ median$(\{x\})+c$. \\ \qed
 \newpage
 \ \\
-\underline{\textbf{1.10}:} In the case of this dataset, I do not beleive the mean to be a very useful summary because we actually see that mean number of barrels, 8582 million, produced in 1962, which is far closer to 1984 than 1880. This same phenomenon in which we suspect our data to be widely spread is confirmed when we observe that the standard deviation of the number of millions of barrels produced is 70141830.23.
+\underline{\textbf{1.10}:} In the case of this dataset, I do not beleive the mean to be a very useful summary because we actually see that mean number of barrels, 8582 million, produced in 1962, which is far closer to 1984 than 1880. This same phenomenon in which we suspect our data to be widely spread is confirmed when we observe that the standard deviation of the number of millions of barrels produced is 70141830.23. As Figure 1 implies, it seems that most of the data is between the 0-5000 million barrel range, but only recently has it shifted drastically upwards to around 15000+ million barrels to affect the mean in such a way.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=100mm]{oil.png}
@@ -69,7 +69,7 @@ The there exists indices $j_1,j_2=\frac{N}{2},\frac{N}{2}+1$, respectively, such
 \end{figure}
 \\[15mm]
 \underline{\textbf{1.11}:} \\ \\
-\textbf{(a)} Every year between the dates 67.5 and 69.5, there is one power plant that had an 1100 Megawatt capacity, where others in that time period were mostly between 600 and 900. Also, one power plant constructed at date 71 had capacity of over 1100 Megawatts. When looking at cost compared to the date, we can see that one power plant cost \$90 million whereas the second highest cost was around \$70 million. \\ \\
+\textbf{(a)} Every year between the dates 67.5 and 69.5, there is one power plant that had an 1100 Megawatt capacity, where others in that time period were mostly between 600 and 900. Also, one power plant constructed at date 71 had capacity of over 1100 Megawatts. Also, when looking at cost compared to the date, we can see that one power plant cost \$90 million whereas the second highest cost was around \$70 million. \\ \\
 \textbf{(b)} Mean: \$46.16 million$\hspace{15mm}$ Std: \$17.01 million \\ \\
 \textbf{(c)} Mean: 825.375 Megawatts$\hspace{15mm}$ Std: 189.36 Megawatts \\ \\
 \textbf{(d)} The histogram (Figure 2) isn't very skewed, probably because as technology increases, so can the capacity of the power plants, but at the same time, technology increasing generally means that the cost decreases.
@@ -102,7 +102,7 @@ In regards to sodium, both the Beef and Poultry histograms had a left skew, whil
 \newpage
 \ \\
 \underline{\textbf{1.13}:} \\ \\
-\textbf{(a)} Groups 1 and 2 have a similar box shape, but the mean and total position of box 1 are greater than box 2, which follows an obvious trend that magazines of a higher education level have more 3 syllable words. Group 3 follows this trend in that it has a lower variance (most of the points fall within the 10-15 frequency range) and has a mean less than group 1. Group 3 does have a few outliers, but overall, it looks like group 3 is the group with the least amount of 3 syllable words. \\
+\textbf{(a)} Groups 1 and 2 have a similar box shape, but the mean and total position of box 1 is greater than box 2, which follows an obvious trend that magazines of a higher education level have more 3 syllable words. Group 3 follows this trend in that it has a lower variance (most of the points fall within the 10-15 frequency range) and has a mean less than group 1. Group 3 does have a few outliers, but overall, it looks like group 3 is the group with the least amount of 3 syllable words. \\
 \begin{figure}[h!]
   \centering
   \begin{subfigure}[b]{0.4\linewidth}
@@ -119,7 +119,8 @@ In regards to sodium, both the Beef and Poultry histograms had a left skew, whil
 \textbf{(b)} In examining the number of sentences, the means are approximately the same across all three groups, but the variances are what differ. The variances for group 1 and group 2 are very similar, but the variance for group 3 is smaller than the others. As with the syllables, group 3 had a few outliers in the number of sentences, this time on the lower end.
 \\[20mm]
 \underline{\textbf{1.14}:} \\ \\
-\textbf{(a)} The distributions seem almost the same, but upon examining the percentiles, the $70^{th}$ percentile of the Math students' drinking during the week was 1.8, in other words, 70\% of the Math students' data was at a 1.8 on a 1-5 scale or lower. This is compared to the Portugese students who had a $70^{th}$ percentile occuring at 2.0 on a 1-5 scale. This means that slightly more Portugese students had a higher rating for drinking during the week.
+For this problem I chose not to modify the datasets to eliminate the double counting. \\ \\
+\textbf{(a)} The distributions seem almost the same, but upon examining the percentiles, the $70^{th}$ percentile of the Math students' drinking during the week was 1.8, in other words, 70\% of the Math students' data was at a 1.8 or lower on a 1-5 scale. This is compared to the Portugese students who had a $70^{th}$ percentile occuring at 2.0 on a 1-5 scale. This means that slightly more Portugese students had a higher rating for drinking during the week.
 \begin{figure}[h!]
   \captionsetup{justification=centering}
   \centering
@@ -170,7 +171,7 @@ In regards to sodium, both the Beef and Poultry histograms had a left skew, whil
 	\item \{MS, M, LE3, yes\}
 \end{itemize}
 \ \\
-If we were to generalize these categories, we would see that students going to school at Mousinho da Silveira that were male tend to go out more than other students.
+If we were to generalize these categories, we would see that students going to school at Mousinho da Silveira that were male tend to drink more than other students.
 \begin{figure}
 	\centering
 	\includegraphics[width=\linewidth]{big_box.png}

@@ -1,12 +1,13 @@
 \documentclass[11pt]{article}
 %Gummi|065|=)
 \title{\textbf{CS 361 Homework 2}}
-\author{Nathaniel Murphy}
+\author{Nathaniel Murphy (njmurph3)}
 \date{}
 
 \usepackage{a4wide}
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage{graphicx}
 
 \begin{document}
 
@@ -101,4 +102,35 @@ Looking at figure 2.21, we can see that the closer $r$ gets to 1, the closer the
 \[\hat{T}^p=\frac{0.7-0.175}{0.231}=2.27\]
 \[\hat{n}_t^p=r\hat{T}^p=0.471(2.27)=1.07\]
 \[n_t^p=\hat{n}_t^p(\sigma_{n_t}+\text{ mean}(\{n_t\})=1.07(30.8)+31.6=\textbf{64.6}\]
+\clearpage
+\section*{2.8}
+\subsection*{(a)}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=100mm]{lung_cig.png}
+	\caption{We see that the two outliers are Nevada and Washington D.C.}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=80mm]{with_outliers_corr.png}
+	\caption{Correlations for data with outliers}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=80mm]{wo_outliers_corr.png}
+	\caption{Correlations for data without outliers}
+\end{figure}
+\clearpage
+\subsection*{(b)}
+We can see that the correlation between per capita cigarette sales and lung cancer deaths per 100K population with the outliers is $r=0.6974$ and without the outliers is $r=0.7145$. Taking out the outliers raised our correclation coefficient because it has been proven that smoking cigarettes increases the risk of lung cancer in individuals. With the commuting and tourism factors taken out, we could see those people that bought cigarettes and died within the same state.
+\subsection*{(c)}
+We can see that the correlation between per capita cigarette sales and bladder cancer deaths per 100K population with the outliers is $r=0.7036$ and without the outliers is $r=0.6076$. This phenomenon is not very explainable in the sense that smoking is a risk factor in contracting bladder cancer, however, upon further examination, the survival rates by stage of bladder cancer are relatively higher than lung cancer. Thus, more people being treated implies that less people die from bladder cancer.
+\subsection*{(d)}
+We can see that the correlation between per capita cigarette sales and kidney cancer deaths per 100K population with the outliers is $r=0.4874$ and without the outliers is $r=0.5791$. Research has shown that smokers have an increased risk of kidney cancer than non-smokers. We see that the correlation is still relatively low with respect to the other cancers, which might be due to the fact that the main cause of kidney cancer is a family history.
+\subsection*{(e)}
+We can see that the correlation between per capita cigarette sales and leukemia deaths per 100K population with the outliers is $r=-0.0685$ and without the outliers is $r=-0.101$. We see that there is little to no negative correlation between cigarette sales and leukemia. Removing the outliers doesn't change this, so we still see a very low correlation.
+\subsection*{(f)}
+Even though we have computed a positive correlation between cigarette sales and lung cancer deaths, we cannot state that smoking causes lung cancer because we are merely exmanining correlation, which is completely different than causation.
+\subsection*{(g)}
+As with the previous question, any correlation that we examine cannot be interpreted as causation. Even further, the correlation that we did observe was extremely low so we expect no relationship between cigarette sales and leukemia.
 \end{document}

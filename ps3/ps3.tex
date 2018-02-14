@@ -1,0 +1,154 @@
+\documentclass[11pt]{article}
+\title{\textbf{CS 361 Spring 2018 \\ Homework 3}}
+\author{Nathaniel Murphy (njmurph3)}
+
+\usepackage{a4wide}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\begin{document}
+\maketitle
+\section*{3.4}
+Let us abbreviate names Goneril: $G$, Regan: $R$, Cordelia: $C$.
+\[\text{\# possible outcomes}=\binom{3}{1}\binom{2}{1}=6\]
+because the king must choose 1 daughter from 3 to give 2 provinces to, then must choose 1 daughter from the two remaining to give the final province to. You may also think of the outcomes in terms of 3-tuples $(a,b,c),$ $a,b,c\in\{0,1,2\}$ and $a\neq b\neq c$. We see that there are $3!=6$ ways to permute $a,b$, and $c$.
+\[
+	\Omega=\left\{\begin{array}{l}
+		(G:2,R:1,C:0) \\
+		(G:2,R:0,C:1) \\
+		(G:1,R:2,C:0) \\
+		(G:1,R:0,C:2) \\
+		(G:0,R:1,C:2) \\
+		(G:0,R:2,C:1)
+	\end{array}
+	\right\}
+\]
+\section*{3.8}
+\subsection*{(a)}
+We know that the smallest possible fraction that either smokes or drinks is $\frac{1}{2}$ (from drinking) so we can say that if everyone that smokes also drinks, the $\frac{1}{3}$ form smoking is absorbed into the $\frac{1}{2}$ of drinking. Thus, the largest possible fraction of students that neither drink nor smoke is $1-P($drinking$)=\frac{1}{2}$.
+\clearpage
+\subsection*{(b)}
+\[P(\Omega)=1=P(\text{neither})+P(\text{drinking or smoking})=\frac{1}{3}+P(\text{drinking or smoking})\]
+Therefore, $P($drinking or smoking$)=\frac{2}{3}$.
+\[P(\text{drinking or smoking})=P(\text{drinking})+P(\text{Smoking})-P(\text{drinking and smoking})\]
+\[\frac{2}{3}=\frac{1}{2}+\frac{1}{3}-P(\text{drinking and smoking})\]
+\[\frac{4}{6}=\frac{5}{6}-P(\text{drinking and smoking})\]
+\[P(\text{drinking and smoking})=\frac{1}{6}\]
+It follows that the fraction of students that both drink alcohol and smoke cigarettes is $\frac{1}{6}$.
+\section*{3.13}
+\subsection*{(a)}
+Order the balls 0,1,2,3 and think of an outcome as a 4 digit binary string where 0 in the $i^{th}$ position indicates that the $i^{th}$ ball is in bucket 0, and a 1 represents that the $i^{th}$ ball is in bucket 1. \\ \\
+Right away we can see that the total number of outcomes is $2^4$. \\ \\
+Suppose the red and green balls are the least significant and second least significant bits in the binary string,respectively (i.e. red is ball 2 and green is ball 3). We want them to have different bits, so we see that the acceptable outcomes must be in the configuration \_ \_ 0 1 or \_ \_ 1 0. It remains to fix the first and second positions in the string. We see that there are $2^2=4$ ways to do so for each.
+\[2^2+2^2=8\text{ ways that the string is in the form \_ \_ 1 0 or \_ \_ 0 1}\]
+\[P(each bucket has a colored ball)=\frac{\#\text{ outcomes where each bucket ahs a colored ball}}{\#\text{ outcomes in }\Omega}=\frac{2^2+2^2}{2^4}=\frac{1}{2}\]
+\subsection*{(b)}
+First off, we must consider 2 scenarios for each distinct bucket having one colored ball:
+\[P(\text{one colored ball in each bucket})=P(\text{green in first, red in second})+P(\text{red in first, green in second})\]
+Because each ball has the same chance to be chosen as another, we can see that
+\[P(\text{green in first, red in second})=P(\text{red in first, green in second})\]
+Without loss of generality, let us consider only the case where the green ball is in the first bucket and the red ball is in the second.
+\[\text{\# outcomes where green in first bucket and red in second bucket: }2!\cdot2!\cdot2!=8\]
+This follows from being able to permute the green and the white ball in the first two positions, being able to permute the red and white ball in the second two positions, and finally, being able to permute the white ball in the first two positions with the white ball in the second two positions. Because of the symmetry of the probabilities of the red and green ball, it follows that
+\[\text{\# outcomes where each bucket contains a colored ball}=2\cdot 2!\cdot 2!\cdot 2!=2\cdot 8=16\]
+\subsection*{(c)}
+Since there are 4 distinct balls that may be permuted it follows that
+\[\text{\# outcomes in }\Omega=4!=24\]
+\[P(\text{each bucket contains a colored ball})=\frac{\text{\# outcomes where each bucket contains a colored ball}}{\text{\# outcomes in }\Omega}\]
+\[=\frac{16}{24}=\frac{2}{3}\]
+\subsection*{(d)}
+These sorting procedures produced different outcomes because the outcome space is constructed differently, mainly, the second construction requires 2 balls to be in both buckets at all times, but the first allows for any number of balls to be in one bucket.
+\section*{3.15}
+\subsection*{(a)}
+\[P(\text{card is a king})=\frac{\text{\# outcomes card is a king}}{\text{\# outcomes in }\Omega}=\frac{4}{52}=\frac{1}{13}\approx 0.7692\]
+\subsection*{(b)}
+\[P(\text{card is a heart})=\frac{\text{\# outcomes card is a heart}}{\text{\# outcomes in }\Omega}=\frac{13}{52}=\frac{1}{4}=0.25\]
+\subsection*{(c)}
+\[P(\text{card is a heart or diamond})=\frac{\text{\# outcomes card is a heart or a diamond}}{\text{\# outcomes in }\Omega}=\frac{26}{52}=\frac{1}{2}=0.5\]
+\section*{3.19}
+\subsection*{(a)}
+\[\text{\# outcomes in }\Omega=\binom{52}{4},\hspace{3mm}\text{\# outcomes all four are same suit=}\binom{4}{1}\binom{13}{4}\]
+\[P(\text{all four cards are of same suit})=\frac{\text{\# outcomes all four are same suit}}{\text{\# outcomes in }\Omega}=\frac{4\cdot\binom{13}{4}}{\binom{52}{4}}=\frac{4\cdot 715}{270725}\approx 0.01056\]
+\subsection*{(b)}
+\[\text{\# outcomes all four cards are red}=\binom{26}{4},\hspace{3mm}\text{\# outcomes in }\Omega=\binom{52}{4}\]
+\[P(\text{all four cards are red})=\frac{\text{\# outcomes all four cards are red}}{\text{\# outcomes in }\Omega}=\frac{\binom{26}{4}}{\binom{52}{4}}=\frac{14950}{27025}\approx 0.05522\]
+\subsection*{(c)}
+\[\text{\# outcomes all four cards different suits}=\binom{13}{1}\binom{13}{1}\binom{13}{1}\binom{13}{1}=13^4,\hspace{3mm}\text{\# outcomes in }\Omega=\binom{52}{4}\]
+\[P(\text{all four cards different suits})=\frac{\text{\# outcomes all four different suits}}{\text{\# outcomes in }\Omega}=\frac{13^4}{\binom{52}{4}}=\frac{28561}{270725}\approx 0.1055\]
+\section*{3.27}
+Let player 1 be P$_1$ and player 2 be P$_2$.
+\subsection*{(a)}
+We see that $P($P$_1$ has 4 land cards) and $P($P$_2$ has 4 land cards) are independent events because the players have disjoint decks. Thus, 
+\[P(\text{P}_1 \text{ has 4 land cards }\cap\text{ P}_2 \text{ has 4 land cards})=P(\text{P}_1\text{ has 4 land cards})\cdot P(\text{P}_2\text{ has 4 land cards})\]
+\[P(\text{P}_1\text{ has 4 land cards})=\frac{\text{\# outcomes P}_1\text{ has 4 land cards}}{\text{\# outcomes in }\Omega}=\frac{\binom{10}{4}\binom{30}{3}}{\binom{40}{7}}\]
+\[P(\text{P}_2\text{ has 4 land cards})=\frac{\text{\# outcomes P}_2\text{ has 4 land cards}}{\text{\# outcomes in }\Omega}=\frac{\binom{20}{4}\binom{20}{3}}{\binom{40}{7}}\]
+\[P(\text{P}_1\text{ has 4 land cards }\cap\text{ P}_2\text{ has 4 land cards})=\frac{\binom{10}{4}\binom{30}{3}}{\binom{40}{7}}\cdot\frac{\binom{20}{4}\binom{20}{3}}{\binom{40}{7}}\]
+\subsection*{(b)}
+Again, because of independence, we have
+\[P(\text{P}_1 \text{ has 2 land cards }\cap\text{ P}_2 \text{ has 3 land cards})=P(\text{P}_1\text{ has 2 land cards})\cdot P(\text{P}_2\text{ has 3 land cards})\]
+\[P(\text{P}_1\text{ has 2 land cards})=\frac{\text{\# outcomes P}_1\text{ has 2 land cards}}{\text{\# outcomes in }\Omega}=\frac{\binom{10}{2}\binom{30}{5}}{\binom{40}{7}}\]
+\[P(\text{P}_2\text{ has 3 land cards})=\frac{\text{\# outcomes P}_2\text{ has 3 land cards}}{\text{\# outcomes in }\Omega}=\frac{\binom{20}{3}\binom{20}{4}}{\binom{40}{7}}\]
+\[P(\text{P}_1\text{ has 2 land cards }\cap\text{ P}_2\text{ has 3 land cards})=\frac{\binom{10}{2}\binom{30}{5}}{\binom{40}{7}}\cdot\frac{\binom{20}{3}\binom{20}{4}}{\binom{40}{7}}\]
+\clearpage
+\subsection*{(c)}
+When examining the number of outcomes for which P$_2$ has more land cards than P$_1$, we see that P$_1$ can have a number of land cards from 0 to 6. We also see that if P$_1$ has i land cards, P$_2$ may have j land cards, $j\in\{j\hspace{1mm}|\hspace{1mm}i<j\leq7\}$. Still note the independence between the decks and let us format this mathematically:
+\[P(\text{P}_2\text{ has more lands than P}_1)=P(\text{P}_1\text{:1 land})P(\text{P}_2\text{:}>\text{1 land})+P(\text{P}_1\text{:2 lands})P(\text{P}_2\text{:}>\text{2 lands) }+\ldots\]
+\[=\frac{\binom{10}{1}\binom{30}{6}}{\binom{40}{7}}\cdot\sum_{i=2}^7{\frac{\binom{20}{i}\binom{20}{7-i}}{\binom{40}{7}}}+\frac{\binom{10}{2}\binom{30}{5}}{\binom{40}{7}}\cdot\sum_{i=2}^7{\frac{\binom{20}{i}\binom{20}{7-i}}{\binom{40}{7}}}+\ldots\]
+\[=\sum_{i=0}^6{\left(\frac{\binom{10}{i}\binom{30}{7-i}}{\binom{40}{7}}\cdot\sum_{j=i+1}^7{\frac{\binom{20}{j}\binom{20}{7-j}}{\binom{40}{7}}}\right)}\]
+\section*{3.30}
+For events $A$ and $B$ to be independent, this equlity must hold:
+\[P(A\cup B)=P(A)P(B)\]
+Given $P(A)=0.5$, $P(B)=0.2$, $P(A\cap B)=0.65$,
+\[0.65\stackrel{?}{=}(0.5)(0.2)\]
+\[0.65\neq 0.1\]
+Therefore $A$ and $B$ are not independent events.
+\section*{3.32}
+\subsection*{(a)}
+\[P(\text{card is red})=\frac{\text{\# outcomes card is red}}{\text{\# outcomes in }\Omega}=\frac{24}{50}=0.48\]
+\[P(\text{card is a queen})=\frac{\text{\# outcomes card is a queen}}{\text{\# outcomes in }\Omega}=\frac{4}{50}=0.08\]
+\[P(\text{card is a red queen})=\frac{\text{\# outcomes card is a red queen}}{\text{\# outcomes in }\Omega}=\frac{2}{50}=0.04\]
+\[P(\text{card is a red queen})\stackrel{?}{=}P(\text{card is red})P(\text{card is a queen})\]
+\[0.04\stackrel{?}{=}(0.48)(0.08)\]
+\[0.04\neq 0.0384\]
+Therefore, $P($card is red) and $P($card is a queen) are not independent events.
+\subsection*{(b)}
+\[P(\text{card is black})=\frac{\text{\# outcomes card is black}}{\text{\# outcomes in }\Omega}=\frac{26}{50}=0.52\]
+\[P(\text{card is a king})=\frac{\text{\# outcomes card is a king}}{\text{\# outcomes in }\Omega}=\frac{2}{50}=0.04\]
+\[P(\text{card is a black king})=\frac{\text{\# outcomes card is a black king}}{\text{\# outcomes in }\Omega}=\frac{2}{50}=0.04\]
+\[P(\text{card is a black king})\stackrel{?}{=}P(\text{card is black})P(\text{card is a king})\]
+\[0.04\stackrel{?}{=}(0.04)(0.52)\]
+\[0.04\neq 0.0208\]
+Therefore, $P($card is black) and $P($card is a king) are not independent events.
+\section*{3.42}
+\subsection*{(a)}
+\[P(\text{7 lands in hand }|\text{ 3 lands were drawn})=\frac{P(\text{3 lands were drawn }|\text{ 7 lands in hand})P(\text{7 lands in hand})}{P(\text{3 lands were drawn})}\]
+\[P(\text{3 lands were drawn }|\text{ 7 lands in hand})=1\]
+\[P(\text{3 lands were drawn})=\frac{\text{\# outcomes 3 lands were drawn}}{\text{\# outcomes in }\Omega}=\frac{\binom{10}{3}}{\binom{40}{3}}\approx 0.01215\]
+\[P(\text{7 lands in hand})=\frac{\text{\# outcomes of 7 lands in a hand}}{\text{\# outcomes in }\Omega}=\frac{\binom{10}{7}}{\binom{40}{7}}\approx6.44\times10^{-6}\]
+\[\frac{P(\text{3 lands were drawn }|\text{ 7 lands in hand})P(\text{7 lands in hand})}{P(\text{3 lands were drawn})}=\frac{\binom{10}{7}}{\binom{40}{7}}\cdot\frac{\binom{40}{3}}{\binom{10}{3}}\approx5.3\times10^{-4}\]
+\subsection*{(b)}
+\[P(\text{3 lands in hand }|\text{ 3 lands iwere drawn})=\frac{P(\text{3 lands were drawn }|\text{ 3 lands in hand})P(\text{3 lands in hand})}{P(\text{3 lands were drawn})}\]
+\[P(\text{3 lands were drawn }|\text{ 3 lands in hand})=\frac{\binom{3}{3}}{\binom{7}{3}}=\frac{1}{\binom{7}{3}}\approx0.0286\]
+\[P(\text{3 lands in hand})=\frac{\binom{10}{3}\binom{30}{4}}{\binom{40}{7}}\approx0.1764\]
+\[P(\text{3 lands were drawn})=\frac{\binom{10}{3}}{\binom{40}{3}}\approx0.01215\]
+\[\frac{P(\text{3 lands were drawn }|\text{ 3 lands in hand})P(\text{3 lands in hand})}{P(\text{3 lands were drawn})}=\frac{1}{\binom{7}{3}}\cdot\frac{\binom{10}{3}\binom{30}{4}}{\binom{40}{7}}\cdot\frac{\binom{40}{3}}{\binom{10}{3}}\approx0.4149\]
+\clearpage
+\subsection*{(a)}
+\[P(\mathcal{K})=0.7\]
+\subsection*{(b)}
+\[P(\mathcal{R}|\mathcal{K})=1\]
+\subsection*{(c)}
+\[P(\mathcal{K}|\mathcal{R})=\frac{P(\mathcal{R}|\mathcal{K})P(\mathcal{K})}{P(\mathcal{R})}\]
+\[P(\mathcal{R})=0.7+0.3\left(\frac{1}{N}\right)\]
+\[P(\mathcal{K}|\mathcal{R})=\frac{0.7}{0.7+\frac{0.3}{N}}\]
+\subsection*{(d)}
+Find $P(\mathcal{K}|\mathcal{R})>0.99$.
+\[\frac{0.7}{0.7+\frac{0.3}{N}}>0.99\]
+\[0.7>0.99\left(0.7+\frac{0.3}{N}\right)\]
+\[0.7>0.693+\frac{0.297}{N}\]
+\[0.007>\frac{0.297}{N}\]
+\[N>\frac{0.297}{0.007}\]
+\[N>42.43\]
+We see that for $N>42$ that $P(\mathcal{K}|\mathcal{R})>0.99$.
+\end{document}

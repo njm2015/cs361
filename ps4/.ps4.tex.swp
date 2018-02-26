@@ -55,7 +55,7 @@ We will define some preliminary probabilities:
 	\item $P(X=2)=P(Y=$ tails $\cap$ $(Z=2\cup Z=3))$ \\
 	$P(X=2)=P(Y=$ tails$)(P(Z=2)+P(Z=3))\hspace{5mm}$ because of independence \\
 	$P(X=2)=\left(\frac{1}{2}\right)\left(\frac{1}{3}\right)=\frac{1}{6}$
-	\item $P(X=3)=1-P(X=1-P(X=2)=1=\frac{1}{2}-\frac{1}{6}=\frac{1}{3}$
+	\item $P(X=3)=1-P(X=1)-P(X=2)=1=\frac{1}{2}-\frac{1}{6}=\frac{1}{3}$
 \end{itemize}
 \subsection*{(a)}
 \[P(X=x)=\begin{cases}
@@ -201,7 +201,7 @@ We want $\mathbb{E}[X]\geq 6$. The following program simulates $\mathbb{E}[X]$ g
 \subsection*{(a)}
 Let $X$ be the random variable that represents how many passengers show up to their flight. Let $n$ represent the number of tickets sold.
 \[P(X=x)=\begin{cases}
-	\binom{n}{x}p^x(1-p^{n-x} & \text{if }0\leq x\leq n \\
+	\binom{n}{x}p^x(1-p)^{n-x} & \text{if }0\leq x\leq n \\
 	0 & \text{otherwise}
 \end{cases}\]
 We see that random variable $X$ follows a binomial distribution, and thus, we know that $\mathbb{E}[X]=np$, where $p$ is the probability of a pasenger showing upt to his/her flight. We want
@@ -209,7 +209,7 @@ We see that random variable $X$ follows a binomial distribution, and thus, we kn
 It follows that when $n\geq\frac{10}{p}$ tickets are sold, the expected number of passengers that show up is greater than 10.
 \subsection*{(b)}
 Upon running the following simulation with various values of $p$, I found that
-\[P(X=x\hspace{1mm}|\hspace{1mm}\text{flight takes off})=10\cdot p\]
+\[\mathbb{E}[(X\hspace{1mm}|\hspace{1mm}\text{flight takes off})]=10\cdot p\]
 Which follows from the event that someone shows up to their flight and the event that the passenger is a woman are independent events.
 \begin{figure}[h!]
 	\centering

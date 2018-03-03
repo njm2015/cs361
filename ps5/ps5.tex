@@ -45,7 +45,7 @@ We notice that $\frac{1}{e^{\frac{x^2}{2}}}$ is always positive because $e^x>0\h
 \[\int_{-\infty}^{\infty}f(x)dx=\int_{-\infty}^{\infty}\left(\frac{1}{\sqrt{2\pi}}\right)e^{-\frac{x^2}{2}}dx\]
 Let us integrate using polar coordinates. \\ \\
 Note that
-\[\left(\int_{-\infty}^{\infty}e^{-\frac{x^2}{2}}\right)^2=\int_{-\infty}^{\infty}e^{-\frac{x^2}{2}}dx\int_{-\infty}^{\infty}e^{-\frac{y^2}{2}}dy=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}e^{-\frac{x^2+y^2}{2}}dxdy=\int\int_{R^2}e^{-\frac{x^2+y^2}{2}}d(x,y)\]
+\[\left(\int_{-\infty}^{\infty}e^{-\frac{x^2}{2}}\right)^2=\int_{-\infty}^{\infty}e^{-\frac{x^2}{2}}dx\int_{-\infty}^{\infty}e^{-\frac{y^2}{2}}dy=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}e^{-\frac{(x^2+y^2)}{2}}dxdy=\int\int_{R^2}e^{-\frac{(x^2+y^2)}{2}}d(x,y)\]
 Knowing that $x=r\text{cos}\theta$ and $y=r\text{sin}\theta,\hspace{1mm}x^2+y^2=r^2(\text{sin}^2\theta+\text{cos}^2\theta)=r^2$.
 \[=\int_0^{2\pi}\int_0^{\infty}e^{-\frac{r^2}{2}}rdrd\theta=2\pi\int_0^{\infty}re^{-\frac{r^2}{2}}\]
 Let $u=\frac{r^2}{2},\hspace{1mm}du=r$
@@ -53,14 +53,15 @@ Let $u=\frac{r^2}{2},\hspace{1mm}du=r$
 It follows that 
 \[\left(\int_{-\infty}^{\infty}e^{-\frac{x^2}{2}}\right)^2=2\pi\Rightarrow\int_{-\infty}^{\infty}e^{-\frac{x^2}{2}}=\sqrt{2\pi}\]
 This implies that
-\[\int_{-\infty}^{\infty}\left(\frac{1}{\sqrt{2\pi}}\right)e^{-\frac{x^2}{2}}dx=\left(\frac{1}{\sqrt{2\pi}}\right)\int_{-\infty}^{\infty}e^{-\frac{x^2}{2}}dx-\left(\frac{1}{\sqrt{2\pi}}\right)\left(\sqrt{2\pi}\right)=1\]
+\[\int_{-\infty}^{\infty}\left(\frac{1}{\sqrt{2\pi}}\right)e^{-\frac{x^2}{2}}dx=\left(\frac{1}{\sqrt{2\pi}}\right)\int_{-\infty}^{\infty}e^{-\frac{x^2}{2}}dx=\left(\frac{1}{\sqrt{2\pi}}\right)\left(\sqrt{2\pi}\right)=1\]
 \subsection*{(c)}
-\[f(-x)=\left(\frac{1}{\sqrt{2\pi}}\right)e^{-\frac{x^2}{2}}=\left(\frac{1}{\sqrt{2\pi}}\right)e^{-\frac{x^2}{2}}=f(x)\]
+\[f(-x)=\left(\frac{1}{\sqrt{2\pi}}\right)e^{-\frac{(-x)^2}{2}}=\left(\frac{1}{\sqrt{2\pi}}\right)e^{-\frac{x^2}{2}}=f(x)\]
 \[f(-x)=f(x)\Rightarrow\int_0^{\infty}f(x)dx=\int_{-\infty}^0f(x)dx\]
 Furthermore,
 \[f(-x)-f(x)=0\Rightarrow xf(-x)-xf(x)=xf(x)+(-xf(x))=0,\hspace{1mm}\forall\hspace{1mm}x\in\mathbb{R}\]
 It follows that
 \[\int_0^{\infty}xf(x)dx=-\int_0^{\infty}-xf(x)dx=-\int_0^{\infty}-xf(-x)dx=-\int_{-\infty}^0xf(x)dx\]
+Finally,
 \[\int_{-\infty}^{\infty}xf(x)dx=\int_0^{\infty}xf(x)dx+\int_{-\infty}^0xf(x)dx=-\int_{-\infty}^0xf(x)dx+\int_{-\infty}^0xf(x)dx=0\]
 \subsection*{(d)}
 Let $s=x-\mu\Rightarrow x=s+\mu,\hspace{1mm}ds=dx$.
@@ -75,7 +76,7 @@ To integrate this, we will be using the gamma function. We will be using the fol
 \end{itemize}
 Let $u=\frac{x^2}{2},\hspace{1mm}du=xdx$. $u=\frac{x^2}{2}\Rightarrow x=\sqrt{2u}$.
 \[\int_{-\infty}^{\infty}x^2e^{-\frac{x^2}{2}}dx=2\int_0^{\infty}x^2e^{-\frac{x^2}{2}}dx=2\int_0^{\infty}xe^{-\frac{x^2}{2}}xdx=2\int_0^{\infty}\sqrt{2u}e^{-u}du=2\sqrt{2}\int_0^{\infty}u^{\frac{1}{2}}e^{-u}du\]
-\[=2\sqrt{2}\cdot\Gamma\left(\frac{3}{2}\right)2\sqrt{2}\left(\frac{\sqrt{\pi}}{2}\right)=\sqrt{2\pi}\]
+\[=2\sqrt{2}\cdot\Gamma\left(\frac{3}{2}\right)=2\sqrt{2}\left(\frac{\sqrt{\pi}}{2}\right)=\sqrt{2\pi}\]
 It follows that
 \[\int_{-\infty}^{\infty}x^2\left(\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}\right)dx=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}x^2e^{-\frac{x^2}{2}}dx=\frac{1}{\sqrt{2\pi}}\cdot\sqrt{2\pi}=1\]
 \clearpage
@@ -83,7 +84,7 @@ It follows that
 \[g(x)=e^{-\frac{(x-\mu)^2}{2\sigma^2}}\]
 Let $u=\frac{x-\mu}{\sigma}$, $du=\frac{1}{\sigma}$. Notice that
 \[\int_{-\infty}^{\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{-\frac{x^2}{2}}dx=1\Rightarrow\int_{-\infty}^{\infty}e^{-\frac{x^2}{2}}dx=\sqrt{2\pi}\]
-\[\int_{-\infty}^{\infty}e^{-\frac{(x-\mu)^2}{2\sigma^2}}dx=\sigma\int_{-\infty}^{\infty}e^{-\frac{x^2}{2}}du=\sigma\sqrt{2\pi}\]
+\[\int_{-\infty}^{\infty}e^{-\frac{(x-\mu)^2}{2\sigma^2}}dx=\sigma\int_{-\infty}^{\infty}e^{-\frac{u^2}{2}}du=\sigma\sqrt{2\pi}\]
 
 \section*{5.28}
 \subsection*{(a)}

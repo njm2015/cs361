@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+\title{\textbf{CS 361 Spring 2018\\Homework 8}}
+\author{Nathaniel Murphy (njmurph3)}
+\date{}
+
+\usepackage{a4wide}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+
+\newcommand{\given}{\hspace{1mm}|\hspace{1mm}}
+\newcommand{\hsp}{\hspace{1mm}}
+
+\begin{document}
+\maketitle
+\section*{9.1}
+\subsection*{(a)}
+Show that MLE of a dataset following the normal distibution is mean$(\{x\})$.
+\[\mathcal{L}(\Theta)=P(x_1,\ldots,x_N\given\Theta,\hsp\sigma)\]
+\[=P(x_1\given\Theta,\hsp\sigma)P(x_2\given\Theta,\hsp\sigma)\ldots P(x_N\given\Theta,\hsp\sigma)\]
+\[=\prod_{i=1}^N\frac{1}{\sqrt{2\pi}\sigma}e^{\frac{-(x_i-\Theta)^2}{2\sigma^2}}\]
+\[\text{log }\mathcal{L}(\Theta)=\sum_{i=1}^N{\frac{1}{\sqrt{2\pi}\sigma}}+\sum_{i=1}^N{-\frac{(x_i-\Theta)^2}{2\sigma^2}}\]
+\[=\frac{N}{\sqrt{2\pi}\sigma}-\frac{1}{\sigma^2}\sum_{i=1}^N{(x_i-\Theta)^2}\]
+\[\frac{\partial}{\partial\Theta}\text{log }\mathcal{L}(\Theta)=0-\frac{1}{\sigma^2}\sum_{i=1}^N{(x_i-\Theta)}\]
+Set the derivative equal to zero.
+\[0=\frac{1}{\sigma^2}\sum_{i=1}^N{(x_i-\Theta)}\]
+\[0=\sum_{i=1}^N{(x_i)}-N\Theta\]
+\[\Theta = \frac{\sum_{i=1}^N{x_i}}{N}=\text{mean}(\{x\})\]
+\subsection*{(b)}
+Show that the MLE for the standard deviation is std$(\{x\})$.
+\[\mathcal{L}(\Theta)=P(x_1,\ldots,x_N\given\Theta,\hsp\sigma)\]
+\[=P(x_1\given\Theta,\hsp\mu)P(x_2\given\Theta,\hsp\mu)\ldots P(x_N\given\Theta,\hsp\mu)\]
+\[=\prod_{i=1}^N\frac{1}{\sqrt{2\pi}\Theta}e^{\frac{-(x_i-\mu)^2}{2\Theta^2}}\]
+\[\text{log }\mathcal{L}(\Theta)=\sum_{i=1}^N {\text{log}\left(\frac{1}{\sqrt{2\pi}\Theta}\right)}+\sum_{i=1}^N{-\frac{(x_i-\mu)^2}{2\Theta^2}}\]
+\[=N\text{log}(1)-N\text{log}(\sqrt{2\pi})-N\text{log}(\Theta)-\frac{1}{\Theta^2}\sum_{i=1}^N\frac{(x_i-\mu)^2}{2}\]
+\[\frac{\partial}{\partial\Theta}\text{log }\mathcal{L}(\Theta)=-\frac{N}{\Theta}+\frac{2}{\Theta^3}\sum_{i=1}^N{\frac{(x_i-\mu)^2}{2}}\]
+Set derivative equal to zero.
+\[0=-\frac{N}{\Theta}+\frac{2}{\Theta^3}\sum_{i=1}^N{\frac{(x_i-\mu)^2}{2}}\]
+\[\frac{N}{\Theta}=\frac{2}{\Theta^3}\sum_{i=1}^N{\frac{(x_i-\mu)^2}{2}}\]
+\[\Theta^2=\frac{2}{N}\sum_{i=1}^N{\frac{(x_i-\mu)^2}{2}}\]
+\[\Theta=\sqrt{\frac{\sum_{i=1}^N{(x_i-\mu)^2}}{N}}=\text{std}(\{x\})\]
+\subsection*{(c)}
+If all numbers $x_1,\ldots,x_N$ take the same value, we have mean$(\{x\})=x_i\hsp\forall\hsp i\in[1,N]$.
+\[\text{std}(\{x\})=\sqrt{\frac{\sum_{i=1}^N{(x_i-x_i)^2}}{N}}=\sqrt{0}=0\]
+\section*{9.3}
+MLE for Poisson distribution is $\frac{\sum_{i=1}^N{n_i}}{N}$.
+\clearpage
+\subsection*{(a)}
+Day 1: $\frac{(3+1+4+2)}{4}=\frac{10}{4}=2.5$ pop-ups per hour. \\
+Day 2: $\frac{(2+1+2)}{3}=\frac{5}{3}\approx 1.67$ pop-ups per hour. \\
+Day 3: $\frac{(3+2+2+1+4)}{5}=\frac{12}{5}=2.4$ pop-ups per hour.
+\subsection*{(b)}
+Day 4 MLE: $\frac{13}{6}\approx2.1$ pop-ups per hour.
+\subsection*{(c)}
+MLE for all 4 days:
+\[\frac{\text{\# total pop-ups}}{\text{\# total hours}}=\frac{40}{18}\approx2.22\text{ pop-ups per hour}\]
+\section*{9.4}
+\subsection*{(a)}
+\[36+\frac{36}{r}\]
+\subsection*{(b)}
+Not very reliable because if on the very first spin the ball lands in a 0 slot, you would assume that all the slots are zeroes.
+\subsection*{(c)}
+\[\frac{\left(\frac{36}{r_1}+\frac{36}{r_2}+\frac{36}{r_3}\right)}{3}\]
+\section*{9.5}
+MLE for Binomial model is $\Theta=\frac{k}{N}$, where $k$ is number of successes and $N$ is number of draws.
+\subsection*{(a)}
+\[\Theta_{blue}=\frac{0}{1}=0\]
+\subsection*{(b)}
+\[\Theta_{blue}=\frac{3}{10}=0.3\]
+\section*{9.7}
+\subsection*{(a)}
+\[\text{log }\frac{P(y=1\given X,\hsp\Theta)}{P(y=0\given X,\hsp\Theta)}=X^T\Theta\]
+\end{document}

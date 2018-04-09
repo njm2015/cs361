@@ -70,5 +70,63 @@ MLE for Binomial model is $\Theta=\frac{k}{N}$, where $k$ is number of successes
 \[\Theta_{blue}=\frac{3}{10}=0.3\]
 \section*{9.7}
 \subsection*{(a)}
-\[\text{log }\frac{P(y=1\given X,\hsp\Theta)}{P(y=0\given X,\hsp\Theta)}=X^T\Theta\]
+\[\text{log }\frac{P(y=1\given x,\hsp\Theta)}{P(y=0\given x,\hsp\Theta)}=x^T\Theta\]
+\[\frac{P(y=1\given x,\hsp\Theta)}{P(y=0\given x,\hsp\Theta}=e^{x^T\Theta}\]
+\[P(y=1\given x,\hsp\Theta)=P(y=0\given x,\hsp\Theta)e^{x^T\Theta}\]
+\[P(y=1\given x,\hsp\Theta)=(1-P(y=1\given x,\hsp\Theta))e^{x^T\Theta}\]
+\[P(y=1\given x,\hsp\Theta)=e^{x^T\Theta}-P(y=1\given x,\hsp\Theta)e^{x^T\Theta}\]
+\[P(y=1\given x,\hsp\Theta)+P(y=1\given x,\hsp\Theta)e^{x^T\Theta}=e^{x^T\Theta}\]
+\[P(y=1\given x,\hsp\Theta)(1+e^{x^T\Theta})=e^{x^T\Theta}\]
+\[P(y=1\given x,\hsp\Theta)=\frac{e^{x^T\Theta}}{1+e^{x^T\Theta}}\]
+\subsection*{(b)}
+\[\mathcal{L}(\Theta)=\prod_{i\in D}P(D\given \Theta)\]
+\[=\prod_{i\in D}P(y_i=1\given x_i,\hsp\Theta)^{y_i}(1-P(y_i=1\given x_i,\Theta))^{1-y_i}\]
+\[=\prod_{i\in D}\left(\frac{e^{x_i^T\Theta}}{1+e^{x_i^T\Theta}}\right)^{y_i}\left(1-\frac{e^{x_i^T\Theta}}{1+e^{x_i^T\Theta}}\right)^{1-y_i}\]
+\[=\prod_{i\in D}\left(\frac{e^{x_i^T\Theta}}{1+e^{x_i^T\Theta}}\right)^{y_i}\left(\frac{1}{1+e^{x_i^T\Theta}}\right)^{1-y_i}\]
+\[\text{log }\mathcal{L}(\Theta)=\sum_{i\in D}{y_i\text{log}\left(\frac{e^{x_i^T\Theta}}{1+e^{x_i^T\Theta}}\right)+(1-y_i)\text{log}\left(\frac{1}{1+e^{x_i^T\Theta}}\right)}\]
+\[=\sum_{i\in D}{y_i\text{log}(e^{x_i^T\Theta})-y_i\log(1+e^{x_i^T\Theta})+\text{log}\left(\frac{1}{1+e^{x_i^T\Theta}}\right)-y_i\text{log}\left(\frac{1}{1+e^{x_i^T\Theta}}\right)}\]
+\[\sum_{i\in D}{y_ix_i^T\Theta-y_i\log(1+e^{x_i^T\Theta})+\log(1)-\log(1+e^{x_i^T\Theta})-y_i\log(1)+y_i\log(1+e^{x_i^T\Theta})}\]
+\[=\sum_{i\in D}{y_ix_i^T\Theta-\log(1+e^{x_i^T\Theta})}\]
+\clearpage
+\subsection*{(c)}
+\[\frac{\partial}{\partial\Theta}\mathcal{L}(\Theta)=y_ix_i^T-\left[x_i^T\cdot^{x_i^T}\cdot\frac{1}{1+e^{x_i^T\Theta}}\right]\]
+\[=x_i^T\left[y_i-\frac{e^{x_i^T}}{1+e^{x_i^T\Theta}}\right]\]
+Setting this derivative equal to zero and solving for $\Theta$ will find the $\Theta$ that maximizes $\mathcal{L}(\Theta)$.
+\section*{9.9}
+\subsection*{(a)}
+\begin{itemize}
+	\item $P(n\given z=0)=0$
+	\item $P(n\given z=1)=\frac{1}{37}$
+	\item $P(n\given z=2)=\frac{2}{38}$
+	\item $P(n\given z=3)=\frac{3}{39}$
+\end{itemize}
+\subsection*{(b)}
+$P(z=0\given observations)$ is only non-zero if observations contains no data points that represent a bet not being payed out. Once a bet is not paid out, we know for a fact that the roulette wheel has more than 0 zero slots.
+\subsection*{(c)}
+\textbf{z=0}:
+\[P(z=0\given observations)=0 \text{ because a bet was not payed out 2} > \text{0 times}\]
+\textbf{z=1}:
+\[P(z=1\given observations)=\frac{P(z=1)P(observations\given z=1)}{P(observations)}=\frac{(0.2)\binom{36}{2}\left(\frac{1}{36}\right)^2\left(\frac{35}{36}\right)^{34}}{P(observations)}=\frac{0.03731}{P(observations)}\]
+\textbf{z=2}:
+\[P(z=2\given observations)=\frac{P(z=2)P(observations\given z=2)}{P(observations)}=\frac{(0.4)\binom{36}{2}\left(\frac{2}{36}\right)^2\left(\frac{34}{36}\right)^{34}}{P(observations)}=\frac{0.1114}{P(observations)}\]
+\textbf{z=3}:
+\[P(z=3\given observations)=\frac{P(z=3)P(observations\given z=3)}{P(observations)}=\frac{(0.3)\binom{36}{2}\left(\frac{3}{36}\right)^2\left(\frac{33}{36}\right)^{34}}{P(observations)}=\frac{0.068122}{P(observations)}\]
+\clearpage
+\[\frac{0+0.03731+0.1114+0.068122}{P(observations)}=1\]
+\[\frac{0.21682}{P(observations)}=1\]
+\[P(observations)=0.21682\]
+\[P(z=0\given observations)=\frac{0}{P(observations)}=0\]
+\[P(z=1\given observations)=\frac{0.03731}{P(observations)}=0.1721\]
+\[P(z=2\given observations)=\frac{0.1114}{P(observations)}=0.5137\]
+\[P(z=3\given observations)=\frac{0.068122}{P(observations)}=0.3142\]
+\\
+Posterior for $z=\{0,1,2,3\}=\{0, 0.1721,0.5137,0.3142\}$
 \end{document}
+
+
+
+
+
+
+
+

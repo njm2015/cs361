@@ -20,7 +20,7 @@
 \section*{10.1}
 \subsection*{(a)}
 \[\text{mean}(\{f\})=\text{mean}(a^T\{x\})\]
-\[=a^T\text{mean}(\{x\}\]
+\[=a^T\text{mean}(\{x\})\]
 because $a^T$ is a constant.
 \subsection*{(b)}
 \[\var(\{f\})=\var(a^T\{x\})\]
@@ -32,7 +32,7 @@ because $a^T$ is a constant.
 \[=a^T\text{Covmat}(\{x\})a\]
 \subsection*{(c)}
 Suppose that for some $a$, $a^T$Covmat$(\{x\})a=0$. \\ \\
-Because $a^T$Covmat$(\{x\})a=0$, we know that $a^T$ is an eigenvector of Covmat$(\{x\})$ with eigenvalue 0. because the eigenvalue is 0, we can say that this eigenvector preserves no variance of the data. Consider the hyperplane that is orthogonal to $a^T$. this hyperplane must preserve all variance of the data simply by the fact that $a^T$ preserves non. Since 100\% of the data can be expressed with this hyperplan, it must follow that the dataset lies in a hyperplane.
+Because $a^T$Covmat$(\{x\})a=0$, we know that $a^T$ is an eigenvector of Covmat$(\{x\})$ with eigenvalue 0. because the eigenvalue is 0, we can say that this eigenvector preserves no variance of the data. Consider the hyperplane that is orthogonal to $a^T$. This hyperplane must preserve all variance of the data simply by the fact that $a^T$ preserves none. Since 100\% of the data can be expressed with this hyperplane, it must follow that the dataset lies in a hyperplane.
 \clearpage
 \section*{10.2}
 \begin{figure}[h!]
@@ -48,7 +48,7 @@ Because the covariance matrix has one non-zero eigenvalue, we may say that 100\%
 \[x_i=a\cdot x_j\text{ for some }a\in\mathbb{R}\text{ and }j<N\]
 It clearly follows that
 \[x_i=a\cdot x_j\Rightarrow x_i = x_1 + t_i(x_2-x_1)\]
-because $x_2-x_1$ lies on the same line formed by $x_1$ and $x_2$ continuing infinitely (because they are linearly dependent). Call this value $x_k$. $x_k-x_1$ is also on the infinite line formed by $x_1$ and $x_2$ because of the same linear dependence between all vectors in the dataset. Let $x_\ell=x_k-x_1$. Because the infinite line formed by $x_1$ and $x_2$ si precisely $a\cdot x_j$, $a\in\mathbb{R}$, $j<N$, we can say that such an $a\in\mathbb{R}$ exists such that $x_i=a\cdot x_\ell$.
+because $x_2-x_1$ lies on the same line formed by $x_1$ and $x_2$ continuing infinitely (because they are linearly dependent). Call this value $x_k$. $x_k+x_1$ is also on the infinite line formed by $x_1$ and $x_2$ because of the same linear dependence between all vectors in the dataset. Let $x_\ell=x_k+x_1$. Because the infinite line formed by $x_1$ and $x_2$ si precisely $a\cdot x_j$, $a\in\mathbb{R}$, $j<N$, we can say that such an $a\in\mathbb{R}$ exists such that $x_i=a\cdot x_\ell$.
 \subsection*{(b)}
 Because all the variance is explained using 1 dimension, the $t$ values are precisely the dataset projected on the line $a\cdot x_j$, $a\in\mathbb{R}$, $j<N$. Because no variance is lost, std$(\{t\})=$std$(\{x\})$.
 \clearpage

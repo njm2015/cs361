@@ -34,6 +34,7 @@ For this classifier, I first created a list of normal models for each feature us
 	\includegraphics[width=125mm]{graph_4.png}
 \end{figure}
 \ \\
+\subsection*{(b,c)}
 What I did was kept track of all of the accuracies for every epoch for each of the regularization constants. After running all epochs, for each regularization constant, I averaged the accuracies for every 10 iterations and plotted them above. \\ \\
 It looks as if using the $\lambda=0.001$ regularization constant will give us the best results with our model because, compared with the $\lambda=0.1$ and $\lambda=1$ models, the $\lambda=0.001$ does have significant improvement (the $\lambda=1$ accuracy even decreases!). The $\lambda=0.01$ and $\lambda=0.001$ models are very close, but the $\lambda=0.001$ model ended up having a slightly higher accuracy. Using the $\lambda=0.001$ model, we estimated an accuracy metric for this classifier. We see that we can achieve around a 92\% accurate classifier using an SVM for this problem.
 \section*{11.7}
